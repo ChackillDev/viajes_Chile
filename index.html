@@ -36,11 +36,11 @@ TODO ● Documentar la versión de los recursos utilizados.
 	TODO links a diferentes secciones de la página, haciendo un smooth scroll.
 	<!-- Barra de navegacion -->
 
-	<div class="barra-nav sticky-top ">
-		<nav class="navbar navbar-expand-sm px-5 justify-content-between">
+	<div class="barra-nav sticky-top bg-propio">
+		<nav class="navbar navbar-expand-sm px-5 justify-content-between" data-bs-theme="dark">
 			<a class="navbar-brand" href="#">
-				<img src="assets/img/favicon/favicon-32x32.png" alt="Logo" height="24"
-					class="d-inline-block align-text-top">
+				<img src="assets/img/favicon/favicon-32x32.png" alt="Logo" height="32"
+					class="d-inline-block align-content-center fs-5">
 				Viajes-Chile
 			</a>
 			<div class="colapso">
@@ -51,10 +51,10 @@ TODO ● Documentar la versión de los recursos utilizados.
 				</button>
 				<div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-						<a class="nav-link active" href="#">Quienes Somos</a>
-						<a class="nav-link active" href="#">Destacados </a>
-						<a class="nav-link active" href="#">Contacto</a>
+						<a class="nav-link active" aria-current="page" href="#colapso">Inicio</a>
+						<a class="nav-link active" href="#presentacion">Quienes Somos</a>
+						<a class="nav-link active" href="#destacados">Destacados </a>
+						<a class="nav-link active" href="#contacto">Contacto</a>
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@ TODO ● Documentar la versión de los recursos utilizados.
 
 	<!-- Inicio - carrusel-->
 	<header>
-		<div id="carrusel_viajes" class="carousel carousel-dark slide">
+		<div id="carrusel_viajes" class="carousel carousel-dark slide ">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="assets/img/carrusel-1.webp" class="d-block " alt="carrusel">
@@ -90,30 +90,34 @@ TODO ● Documentar la versión de los recursos utilizados.
 
 		<div class="container">
 			<!-- presentacion -->
-			<section class="presentacion">
-				<div class="container row justify-content-center  mb-5">
-					<div class="p-5 col-md-3 ">
-						<span class="d-flex justify-content-center bg-primary">
-							<i class="fa-solid fa-plane text-white "></i>
-						</span>
-						<p class="text-start text-white ">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet sapiente consectetur
-							consequuntur, pariatur eum perspiciatis corporis necessitatibus obcaecati porro nulla voluptatem
-							totam culpa, at laborum. Labore ab numquam commodi!
-						</p>
+			<section id="presentacion">
+				<h2 class=" container row justify-content-center text-white p-5 border-bottom border-white mb-5">
+					¿Quienes Somos?
+				</h2>
+					<div class="container row justify-content-center  ">
+						<div class="p-5 col-md-3 ">
+							<span class="d-flex justify-content-center bg-primary py-1 ">
+								<i class="fa-solid fa-plane text-white "></i>
+							</span>
+							<p class="text-start text-white ">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet sapiente consectetur
+								consequuntur, pariatur eum perspiciatis corporis necessitatibus obcaecati porro nulla voluptatem
+								totam culpa, at laborum. Labore ab numquam commodi!
+							</p>
+						</div>
+						<div class="p-5 col-md-3 ">
+							<p class="text-start text-white ">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis repellat architecto ad
+								ratione, eligendi consectetur maiores unde culpa dignissimos, eveniet debitis tenetur excepturi!
+								Doloribus vel dolore aliquam tenetur. Minus!
+								Lorem ipsum dolor, sit amet consectetur 
+							</p>
+							<span class="d-flex justify-content-center bg-primary py-1">
+								<i class="fa-solid fa-mountain bg-primary text-white "></i>
+							</span>
 					</div>
 					<div class="p-5 col-md-3 ">
-						<p class="text-start text-white ">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis repellat architecto ad
-							ratione, eligendi consectetur maiores unde culpa dignissimos, eveniet debitis tenetur excepturi!
-							Doloribus vel dolore aliquam tenetur. Minus!
-						</p>
-						<span class="d-flex justify-content-center bg-primary">
-							<i class="fa-solid fa-mountain bg-primary text-white "></i>
-						</span>
-					</div>
-					<div class="p-5 col-md-3 ">
-						<span class="d-flex justify-content-center bg-primary">
+						<span class="d-flex justify-content-center bg-primary py-1">
 							<i class="fa-solid fa-route bg-primary text-white "></i>
 						</span>
 						<p class="text-start text-white ">
@@ -121,18 +125,20 @@ TODO ● Documentar la versión de los recursos utilizados.
 							fugit
 							dignissimos quibusdam debitis sint omnis id, dolores repudiandae praesentium molestias
 							voluptatibus
-							magni quia expedita. Sequi, assumenda minus.
+							magni quia expedita. Sequi
 						</p>
 					</div>
 				</div>
 			</section>
-			<div class="destacados">
-				<h3 class="text-center cabinBold mb-5 title-color">Destacados</h3>
-				<div class=" row mb-5 justify-content-evenly">
+			<div id="destacados">
+				<h2 class=" container row justify-content-center text-white  border-bottom border-white p-5 mb-5 ">
+					Destacados
+				</h2>
+				<div class="d-flex mb-auto p-1 bg-black ">
 					<!-- tarjeta 1 -->
-					<div class="card col-10 col-sm-10 col-md-3">
+					<div class="card col-10 col-sm-10 col-md-3 p-3 text-white bg-black ">
 						<img src="assets/img/card-1.webp" class="card-img-top" alt="card-1">
-						<div class="card-body border border-2 ">
+						<div class="card-body border border-2 bg-primary ">
 							<h5 class="tarjetas card-title title-color cabinBold ">
 							</h5>
 							<p class="mb-2 ">
@@ -143,9 +149,10 @@ TODO ● Documentar la versión de los recursos utilizados.
 							</p>
 						</div>
 					</div>
-					<div class="card col-10 col-sm-10 col-md-3">
+					<!-- tarjeta 2 -->
+					<div class="card col-10 col-sm-10 col-md-3 p-3 text-white bg-black ">
 						<img src="assets/img/card-2.webp" class="card-img-top" alt="card-2">
-						<div class="card-body border border-2 ">
+						<div class="card-body border border-2 bg-primary ">
 							<h5 class="tarjetas card-title title-color cabinBold ">
 							</h5>
 							<p class="mb-2 ">
@@ -155,9 +162,10 @@ TODO ● Documentar la versión de los recursos utilizados.
 							</p>
 						</div>
 					</div>
-					<div class="card col-10 col-sm-10 col-md-3">
+					<!-- tarjeta 3 -->
+					<div class="card col-10 col-sm-10 col-md-3 p-3 text-white bg-black ">
 						<img src="assets/img/card-3.webp" class="card-img-top" alt="recipe-card-3">
-						<div class="card-body border border-2 ">
+						<div class="card-body border border-2 bg-primary ">
 							<h5 class="tarjetas card-title title-color cabinBold ">
 							</h5>
 							<p class="mb-2 ">
@@ -168,9 +176,10 @@ TODO ● Documentar la versión de los recursos utilizados.
 							</p>
 						</div>
 					</div>
-					<div class="card col-10 col-sm-10 col-md-3">
+					<!-- tarjeta 4 -->
+					<div class="card col-10 col-sm-10 col-md-3 p-3 text-white bg-black ">
 						<img src="assets/img/card-4.webp" class="card-img-top" alt="card-4">
-						<div class="card-body border border-2 ">
+						<div class="card-body border border-2 bg-primary ">
 							<h5 class="tarjetas card-title title-color cabinBold ">
 							</h5>
 							<p class="mb-2 ">
@@ -184,21 +193,24 @@ TODO ● Documentar la versión de los recursos utilizados.
 				</div>
 			</div>
 			TODO ● Una sección de formulario de contacto.
-			<div class="contacto">
+			<div id="contacto">
+				<h2 class=" container row justify-content-center text-white py5 border-bottom border-white mb-5">
+					Contacto
+				</h2>
 				<form action="">
 				</form>
 			</div>
 		</div>
 	</div>
 	<!-- Pie de pagina -->
-	TODO ● Una sección footer con links a las redes sociales.
 	<footer>
-		<section class="text-center tx-color mb-3 bg-propio py-5">
+		<section class="row justify-content-center text-white  border-bottom border-white p-5 mb-5">
 			<h2>
 				<span class="texto-lobster tx-color "></span>
 			</h2>
 		</section>
 	</footer>
+	TODO ● Una sección footer con links a las redes sociales.
 
 	TODO 4. Agregar componentes que utilicen JavaScript.
 	(2 Puntos)
