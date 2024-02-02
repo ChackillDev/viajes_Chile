@@ -72,7 +72,7 @@ width: 17%;
 }
 
 .bg-propio {
-  background-color: #373A3C
+  background-color: black;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -90,7 +90,8 @@ width: 17%;
   color: #FFFFFF;
 }
 
-@media screen and (width< 768px) {#carrusel_viajes
+@media screen and (width< 768px) 
+{.presentacion
   {
       display: none;
   }
