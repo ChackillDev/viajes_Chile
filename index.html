@@ -31,8 +31,6 @@
 </head>
 
 <body>
-	
-	TODO links a diferentes secciones de la página, haciendo un smooth scroll.
 	<!-- Barra de navegacion -->
 	
 	<div class="barra-nav sticky-top bg-propio">
@@ -108,7 +106,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis repellat architecto ad
 									ratione, eligendi consectetur maiores unde culpa dignissimos, eveniet debitis tenetur excepturi!
 									Doloribus vel dolore aliquam tenetur. Minus!
-									Lorem ipsum dolor, sit amet consectetur
+									Lorem ipsum dolor
 								</p>
 								<span class="d-flex justify-content-center bg-primary py-1">
 									<i class="fa-solid fa-mountain bg-primary text-white "></i>
@@ -191,15 +189,23 @@
 					</div>
 				</section>
 				<section id="contacto">
-					<h2 class=" container row justify-content-center text-white  border-bottom border-white p-5 mb-5 ">
+					<h2 class=" row justify-content-center text-white  border-bottom border-white p-5 mb-5 ">
 						Contacto
 					</h2>
+					<form class="container row text-white p-5 mb-5 ">
+					<label for="nombreEntrada" class="fs-3 mb-2 ">Nombre</label>
+						<input class="mb-2 p-2 " type="text" name="nombre" id="nombreEntrada" placeholder="Ingrese acá su nombre" >
+					<label for="asuntoEntrada" class="fs-3 mb-2 ">Asunto</label>
+						<input class="mb-2 p-2 " type="text" name="asunto" id="asuntoEntrada" placeholder="Ingrese acá el asunto" >
+					<label for="mensaje" class="fs-3 mb-2 ">Mensaje</label>
+					<textarea class="mb-3 "	 name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Ingrese su mensaje" ></textarea>
+					<button type="submit" class="btn btn-primary col-sm-3">Enviar</button>
+					  </form>
 				</section>
 		</div>
 	</div>
 	<!-- Pie de pagina -->
-	<footer>
-		<section class="d-flex justify-content-around  bg-primary text-white py-5 ">
+	<footer class="d-flex justify-content-around  bg-primary text-white py-5 ">
 			<h2>
 				VIAJES CHILE
 			</h2>
@@ -217,7 +223,6 @@
 						<i class="fa-brands fa-facebook px-3 fs-2 text-white"></i>
 					</a>
 				</div>
-		</section>
 	</footer>
 
 	<!-- scripts de base -->
